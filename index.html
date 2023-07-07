@@ -13,37 +13,60 @@
 </head>
 
 <body>
-    <header>
-        <h1>CYBERWARE</h1>
-    </header>
-    <footer>
-        Photo by <a href="https://unsplash.com/@valentinbvs" target="_blank">Valentin BEAUVAIS</a> on <a
-            href="https://unsplash.com/" target="_blank">Unsplash</a>
-    </footer>
-    <form action="#" method="post">
+    <div class="left">
+        <header>
+            <div class="logo">
+                <img src="img/cw-icon.png" alt="microchip">
+            </div>
+            <h1>CYBERWARE</h1>
+        </header>
+        <footer>
+            Photo by <a href="https://unsplash.com/@valentinbvs" target="_blank">Valentin BEAUVAIS</a> on <a
+                href="https://unsplash.com/" target="_blank">Unsplash</a>
+        </footer>
+    </div>
+    <form class="right" action="#" method="post">
         <div class="form-description">
             <p>This is not a real online service! You know you need something like this in your life to help you realize
                 your deepest dreams. Sign up <em>now</em> to get started.</p>
-            <p>Your <em>know</em> you want to.</p>
-            <fieldset>
-                <h2>Let's do this!</h2>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <fieldset>
+            <h2>Let's do this!</h2>
                 <div class="row">
-                    <div><label for="user-first-name">FIRST NAME</label><input type="text"></div>
-                    <div><label for="user-last-name">LAST NAME</label><input type="text"></div>
+                    <div>
+                        <label for="user-first-name">FIRST NAME</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="user-last-name">LAST NAME</label>
+                        <input type="text">
+                    </div>
                 </div>
                 <div class="row">
-                    <div><label for="user-email">EMAIL</label><input type="email"></div>
-                    <div><label for="user-phone">PHONE NUMBER</label><input type="tel"></div>
+                    <div>
+                        <label for="user-email">EMAIL</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="user-phone">PHONE NUMBER</label>
+                        <input type="tel">
+                    </div>
                 </div>
                 <div class="row">
-                    <div><label for="user-password">PASSWORD</label><input type="password"></div>
-                    <div><label for="user-confirm-password">CONFIRM PASSWORD</label><input type="password"></div>
+                    <div>
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <label for="user-confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password">
+                    </div>
                 </div>
-            </fieldset>
-            <div class="form-submit">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </div>
+        </fieldset>
+        <div class="form-submit">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </form>
 </body>

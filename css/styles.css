@@ -1,0 +1,133 @@
+/* general styles */
+:root {
+    box-sizing: border-box;
+    --system-font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--system-font-stack);
+    display: flex;
+    margin: 0;
+}
+
+.left,
+.right {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body,
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 0, 255);
+}
+
+/* left side styles */
+.left {
+    width: 40%;
+    background: url(../img/cw-bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    gap: 16px;
+    padding: 16px;
+}
+
+h1 {
+    font-family: 'Orbitron', var(--system-font-stack);
+    font-size: 48px;
+    margin: 0;
+}
+
+.logo {
+    width: 96px;
+    flex-shrink: 0;
+}
+
+.logo>img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    display: block;
+}
+
+footer {
+    margin-top: auto;
+    padding: 16px;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* right side styles */
+.right {
+    width: 60%;
+    justify-content: center;
+    gap: 24px;
+    background-color: #171225;
+    font-weight: bold;
+}
+
+.form-description p {
+    max-width: 56ch;
+}
+
+.form-description,
+fieldset,
+.form-submit {
+    padding-left: 48px;
+}
+
+fieldset {
+    margin: 0;
+    background-color: #2e244a;
+    border: none;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0 0 8px 2px rgba(186, 107, 255, 0.4);
+}
+
+h2 {
+    margin: 24px 0;
+}
+
+.row {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 24px;
+}
+
+.row label,
+.row input {
+    display: block;
+}
+
+.row label {
+    font-size: 12px;
+}
+
+.row input {
+    height: 28px;
+    width: 250px;
+    border-radius: 4px;
+}
