@@ -25,44 +25,46 @@
                 href="https://unsplash.com/" target="_blank">Unsplash</a>
         </footer>
     </div>
-    <form class="right" action="#" method="post">
+    <form class="right" action="success.html" method="post" target="_blank">
         <div class="form-description">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize
-                your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>Upgrade your human potential with cutting-edge cyber implants! Enhance your abilities, connect to the
+                digital world like never before. <br>Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
         <fieldset>
             <h2>Let's do this!</h2>
-                <div class="row">
-                    <div>
-                        <label for="user-first-name">FIRST NAME</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label for="user-last-name">LAST NAME</label>
-                        <input type="text">
-                    </div>
+            <div class="row">
+                <div>
+                    <label for="user-first-name">FIRST NAME</label>
+                    <input id="user-first-name" name="user-first-name" type="text" placeholder="David" required
+                        pattern="[a-zA-z]{2,}">
                 </div>
-                <div class="row">
-                    <div>
-                        <label for="user-email">EMAIL</label>
-                        <input type="email">
-                    </div>
-                    <div>
-                        <label for="user-phone">PHONE NUMBER</label>
-                        <input type="tel">
-                    </div>
+                <div>
+                    <label for="user-last-name">LAST NAME</label>
+                    <input id="user-last-name" name="user-last-name" type="text" placeholder="Martinez" required
+                        pattern="[a-zA-z]{2,}">
                 </div>
-                <div class="row">
-                    <div>
-                        <label for="user-password">PASSWORD</label>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <label for="user-confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password">
-                    </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="user-email">EMAIL</label>
+                    <input id="user-email" name="user-email" type="email" placeholder="dmartinez@example.com" required>
                 </div>
+                <div>
+                    <label for="user-phone">PHONE NUMBER</label>
+                    <input id="user-phone" name="user-phone" type="tel" placeholder="x-xxx-xxx-xxxx">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="user-password">PASSWORD</label>
+                    <input id="user-password" name="user-password" type="password" required>
+                </div>
+                <div>
+                    <label for="user-confirm-password">CONFIRM PASSWORD</label>
+                    <input id="user-confirm-password" name="user-confirm-password" type="password" required>
+                </div>
+            </div>
         </fieldset>
         <div class="form-submit">
             <button type="submit">Create Account</button>
