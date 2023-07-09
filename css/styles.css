@@ -76,7 +76,7 @@ footer {
 
 header,
 footer {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* right side styles */
@@ -85,7 +85,7 @@ footer {
     justify-content: flex-start;
     gap: 24px;
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
 }
 
@@ -108,8 +108,6 @@ fieldset {
     margin: 0;
     background-color: rgba(46, 36, 74, 0.8);
     border: none;
-    position: relative;
-    z-index: 0;
 }
 
 h2 {
@@ -131,6 +129,11 @@ h2 {
     font-size: 12px;
 }
 
+label:not([for='user-phone'])::after {
+    content: " *";
+    color: red;
+}
+
 .row input {
     height: 28px;
     width: 250px;
@@ -142,6 +145,22 @@ h2 {
 .row input::placeholder {
     color: rgb(188, 188, 188);
     font-weight: bold;
+}
+
+.row input.not-matching {
+    outline: solid 2px red;
+}
+
+.row input:invalid {
+    outline: 2px solid red;
+}
+
+.row input:focus {
+    outline: 2px solid rgb(255, 0, 255);
+}
+
+.row input:placeholder-shown {
+    outline: none;
 }
 
 .form-submit button {
@@ -162,21 +181,4 @@ h2 {
 
 .form-submit button:active {
     box-shadow: inset 0 0 5px black;
-}
-
-.row input:invalid {
-    outline: solid 2px red;
-}
-
-.row input.not-matching {
-    outline: solid 2px red;
-}
-
-.row input:focus {
-    outline: 2px solid rgb(255, 0, 255);
-}
-
-label:not([for='user-phone'])::after {
-    content: " *";
-    color: red;
 }
